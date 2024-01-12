@@ -1,0 +1,17 @@
+$colors: (
+    brand: hsl(237, 100%, 70%),
+    white: hsl(0, 0%, 100%),
+    off-white: hsl(0, 0%, 94%),
+    gray: hsl(0, 0%, 50%),
+    dark-gray: hsl(0, 0%, 14%),
+    almost-black: hsl(0, 5%, 7%),
+    black: hsl(0, 0%, 0%),
+    red: hsl(350, 74%, 45%),
+    green: hsl(149, 100%, 32%),
+);
+
+:root {
+    @each $name, $value in $colors {
+        --#{$name}: #{$value};
+    }
+}

@@ -16,6 +16,16 @@ type Message struct {
 type Data struct {
 }
 
+type Conn struct {
+	ws *websocket.Conn
+	send chan []byte
+	h *Hub
+}
+
+type Hub struct {
+	conns map[*Conn]bool
+}
+
 func main() {
 	wsUpgrader := websocket.Upgrader{
 		ReadBufferSize:  1024,

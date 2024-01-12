@@ -1,0 +1,36 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 16px;
+    margin: 16px;
+    height: 100%;
+
+    div {
+        grid-row: span 2;
+        grid-column: span 3;
+
+        padding: 16px;
+        border: 2px solid var(--gray);
+        border-radius: 8px;
+    }
+}
+
+.footer {
+    line-height: 50px;
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--gray);
+}
