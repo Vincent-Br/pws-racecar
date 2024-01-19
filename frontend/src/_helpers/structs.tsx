@@ -21,6 +21,6 @@ export type Sensors = {
     };
 };
 
-export type MessageType = 'INIT' | 'SENSORS' | 'CONTROLS';
+export type MessageType = 'HANDSHAKE' | 'INIT' | 'HEARTBEAT' | 'GETSENSORS' | 'SETCONTROLS';
 
 export type WSPayload = [number, object];
