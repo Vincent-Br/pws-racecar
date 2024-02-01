@@ -25,7 +25,7 @@ function App() {
 
     var ws: WebSocket;
 
-    ws = new WebSocket('ws://ws.auto.sillyfrog.nl:8100');
+    ws = new WebSocket('wss://ws.auto.sillyfrog.nl:8100');
 
     ws.addEventListener('message', async (e) => {
         var data: string = await e.data.text();
