@@ -1,6 +1,4 @@
 import './App.scss';
-import { car, sendMessage } from '../_helpers/wsConn';
-import { useEffect, useRef, useState } from 'react';
 import { Car } from '../_helpers/structs';
 
 function App() {
