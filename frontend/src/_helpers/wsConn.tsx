@@ -23,7 +23,7 @@ export var car: Car = {
 };
 
 export function openWebsocket() {
-    ws = new WebSocket('ws://carcontrol.vincentbrokx.nl:8100');
+    ws = new WebSocket('ws://ws.auto.sillyfrog.nl:8100');
 
     ws.addEventListener('message', (e) => {
         // var reader = new FileReader();
