@@ -1,6 +1,7 @@
 import { Car, MessageType, WSPayload } from './structs';
 
 var ws: WebSocket;
+
 export var car: Car = {
     Id: 'null',
     sensors: {
@@ -21,24 +22,6 @@ export var car: Car = {
         z: 0,
     },
 };
-
-export function openWebsocket() {
-    ws = new WebSocket('ws://ws.auto.sillyfrog.nl:8100');
-
-    ws.addEventListener('message', (e) => {
-        // var reader = new FileReader();
-        // reader.onload = () => {
-        //     console.log(reader.result);
-        // };
-        // reader.readAsArrayBuffer(e.data);
-
-        var data: WSPayload = e.data.text();
-
-        car.Id = '12323rv sg' + Math.random();
-
-        console.log(data[0]);
-    });
-}
 
 export function sendMessage(messageType: Array<MessageType>, data: object) {
     var payload: WSPayload = [0x00, {}];
