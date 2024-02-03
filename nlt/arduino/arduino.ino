@@ -2,10 +2,10 @@
 
 Car car; // define car variable
 
-int minCenterDist = 20;
-int minSideDist = 10;
+int minCenterDist = 25;
+int minSideDist = 15;
 
-float leftSpeedMultiplier = 1.0;
+float leftSpeedMultiplier = 0.95;
 float rightSpeedMultiplier = 1.0;
 
 void setup()
