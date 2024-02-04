@@ -15,7 +15,7 @@ WebsocketsClient client;
 int minCenterDist = 20;
 int minSideDist = 10;
 
-float leftSpeedMultiplier = 1.0;
+float leftSpeedMultiplier = 0.95;
 float rightSpeedMultiplier = 1.0;
 
 void setup()
@@ -50,7 +50,7 @@ void setup()
 
     // set wifi credentials
     conn.ssid = "Vinnie";
-    conn.password = "WaggoeW00rd"; //! Replace password
+    conn.password = "password"; //! Replace password
 
     WiFi.setHostname(car.Id);
     WiFi.mode(WIFI_STA);
